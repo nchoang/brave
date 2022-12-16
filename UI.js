@@ -33,7 +33,7 @@ export class UI {
             if (this.game.score >= this.game.winningScore) {
                 context.fillText('Congratulation!', this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize * 0.7 + 'px ' + this.fontFamily;
-                context.fillText('Brave has reached his owner', this.game.width * 0.5, this.game.height * 0.5 + 20);
+                context.fillText('Brave escaped the forest', this.game.width * 0.5, this.game.height * 0.5 + 20);
             } else {
                 context.fillText('Game Over!', this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize * 0.7 + 'px ' + this.fontFamily;

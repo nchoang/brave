@@ -102,7 +102,6 @@ export class Player {
                 } else {
                     this.sound2.play();
                     this.setState(6, 0);
-                    this.game.score -= 2;
                     this.game.lives--;
                     if (this.game.lives <= 0) this.game.gameOver = true;
                 }

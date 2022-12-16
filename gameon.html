@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brave</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="./style.css">
+    <embed id="myAudio" src="/sounds/gameplay.mp3" loop="infinite" autostart="true" style="width: 1px; height: 1px; user-select: none">
+</head>
+<body>
+    <div class="game">
+        <canvas id="canvas1"></canvas>
+
+        <img id="player" src="./img/sprite/player.png" alt="">
+        <img id="layer4" src="./img/sprite/layer-4.png" alt="">
+        <img id="layer5" src="./img/sprite/layer-5.png" alt="">
+        <img id="enemy_fly" src="./img/sprite/enemy_fly.png" alt="">
+        <img id="enemy_plant" src="./img/sprite/enemy_plant.png" alt="">
+        <img id="enemy_spider_big" src="./img/sprite/enemy_spider_big.png" alt="">
+        <img id="fire" src="./img/sprite/fire.png" alt="">
+        <img id="collisionAnimation" src="./img/sprite/boom.png" alt="">
+        <img id="lives" src="./img/sprite/lives.png" alt="">
+    </div>
+    <div class="return" style="top: 100%">
+        <button onclick="document.location='index.html'" id="btnmenu" class="button1">Main Menu</button>
+    </div>
+    <div class="restart">
+        <button onclick='location.reload();' id="btnmenu" class="button1" style="cursor: pointer; user-select: none">Restart Game</button>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

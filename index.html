@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap" rel="stylesheet">
+    <Link rel="Stylesheet" type="text/css" href="./style.css">
+    <script src="https://kit.fontawesome.com/062967a1d1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <embed id="myAudio" src="/sounds/menu.mp3" loop="infinite" autostart="true" style="width: 1px; height: 1px; user-select: none">
+    </head>
+    <title>Brave</title>
+
+<body>
+    <div class ="mainmenu">
+      <h1>Brave</h1>
+      <button onclick="document.location='gameon.html'" class="button1">New Game</button>
+      <div class ="guidemenu">
+        <button onclick="showguide()" id="btnguide" class="button1">Guide</button>
+      </div>
+      <div class ="social">
+        <a href="https://www.facebook.com/nchoang217/" class="fa-brands fa-facebook fa-2x" target="_blank"></a>
+        <a href="https://paypal.com/paypalme/nchoang21" class="fa-brands fa-cc-paypal fa-2x" target="_blank"></a>
+        <a href="https://www.youtube.com/channel/UCLCxWp0LLUiGsSuCxSFG7ng" class="fa-brands fa-youtube fa-2x" target="_blank"></a>
+      </div>
+    </div>
+
+    <div class="guidepage">
+      <h2>Guide</h2>
+      <div class = "imgguide">
+        <img class ="imgguide1" src="/img/guide.png" alt="">
+      </div>
+      <div class="return">
+          <button onclick="showmenu()" id="btnmenu" class="button1">Main Menu</button>
+      </div>
+    </div>
+
+    <script>
+      var btnguide = document.querySelector('#btnguide');
+      var showguide1 = document.querySelector('.guidepage');
+      var mainmenu = document.querySelector('.mainmenu');
+      var showmenu1 = document.querySelector('.mainmenu');
+      var btnmenu = document.querySelector('#btnmenu');
+      function showguide() {
+        showguide1.style.display = "block";
+        mainmenu.style.display = "none";
+      }
+      function showmenu() {
+        showmenu1.style.display = "block";
+        showguide1.style.display = "none";
+      }
+    </script>
+
+
+  </body>
+</html>

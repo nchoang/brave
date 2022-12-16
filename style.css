@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#canvas1 {
+  border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;;
+}
+
+body {
+    background-image: url("/img/background/wall.png");
+    text-align: center;
+}
+
+.button1 {
+    text-align: middle;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(225, 225, 225);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,139,253,0);
+    border-radius:  3px;
+    color: #000000;
+    font-family: 'Hanalei Fill';
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button1:hover {
+    background-color: transparent;
+    color: rgb(217, 217, 217);
+}
+
+h1 {
+    font-family: 'Hanalei Fill';
+    font-size: 55px;
+    user-select: none;
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: #000000 0px 0px 5px
+}
+
+h2 {
+  font-family: 'Hanalei Fill';
+  font-size: 45px;
+  user-select: none;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: #000000 0px 0px 5px
+}
+
+.guidepage {
+  position: relative;
+  top: 20%;
+  left: 0%;
+  display: none;
+}
+
+.social {
+    padding: 50px;
+    display: flexbox;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    opacity: 0.3;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    text-align: center;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 50%;
+    color: rgb(46, 78, 185);
+  }
+  
+  /* PayPal */
+  .fa-cc-paypal {
+    text-align: center;
+    text-decoration: none;
+    background: #ececec;
+    border-radius: 10%;
+    color: #00233d;
+  }
+
+  /* YouTube */
+  .fa-youtube {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+    background: white;
+    color: #cd0000;
+  }
+
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_fly, #enemy_plant, #enemy_spider_big, #fire, #collisionAnimation, #lives
+{
+  display: none;
+}

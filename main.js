@@ -30,7 +30,7 @@ window.addEventListener('load', function(){
       this.enemmyInterval = 1000;
       this.debug = false;
       this.score = 0;
-      this.winningScore = 50;
+      this.winningScore = 30;
       this.maxStamina = 300;
       this.stamina = 300;
       this.fontColor = 'white';
